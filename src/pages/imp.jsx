@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import SarkacEgzersizi from '../assets/egzeriz-img/imp-sendrome/sarkaç-egz.jpg';
 import ParmakYuruyusu from '../assets/egzeriz-img/imp-sendrome/parmak-egz.jpg';
 import CubukEgzersizi from '../assets/egzeriz-img/imp-sendrome/çubuk-egz.jpg';

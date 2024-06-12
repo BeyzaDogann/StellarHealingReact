@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import BoyunEsnetme from '../assets/egzeriz-img/neck-hernia/boyun-esnetme.jpg';
 import IzometrikEgzersiz from '../assets/egzeriz-img/neck-hernia/izometrik.jpg';
 import OmuzShrug from '../assets/egzeriz-img/neck-hernia/omuz-shrug.jpg';

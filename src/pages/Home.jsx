@@ -1,5 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import NavigationBar from '../components/Navbar';
 import NeckHernia from '../assets/anasayfa-img/neck-hernia.jpg';
 import ImpSendrome from '../assets/anasayfa-img/imp.jpg';

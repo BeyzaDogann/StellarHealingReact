@@ -1,6 +1,5 @@
 
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import AyakBilegi from '../assets/egzeriz-img/desk-worker/ayak-bileği.jpg';
 import AyakKaldırma from '../assets/egzeriz-img/desk-worker/ayak-kaldırma.jpg';
 import BoyunEgzesizi from '../assets/egzeriz-img/desk-worker/boyunegz-dw.jpg';
