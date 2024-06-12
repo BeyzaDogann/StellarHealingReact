@@ -1,30 +1,9 @@
 import React, { useEffect, useState } from 'react';
-// import SwiperCore, { Navigation, Pagination } from 'swiper/core';
-// import { Swiper, SwiperSlide } from 'swiper/react';
 import Profile from '../assets/profile-img/fzt4.jpg';
 import '../style/About.css'
 
 
-// SwiperCore.use([Navigation, Pagination]);
 
-// const images = import.meta.glob('../assets/sertifika-img/*.jpg');
-
-// const About = () => {
-//   const [imageUrls, setImageUrls] = useState([]);
-
-//   useEffect(() => {
-//     const loadImages = async () => {
-//       const loadedImages = await Promise.all(
-//         Object.keys(images).map(async (imagePath) => {
-//           const image = await images[imagePath]();
-//           return image.default;
-//         })
-//       );
-//       setImageUrls(loadedImages);
-//     };
-
-//     loadImages();
-//   }, []);
 const About = ()  => {
 
   return (
@@ -53,21 +32,7 @@ const About = ()  => {
           Şu an bir şirkette Frontend Developer olarak çalışmaktayım.
         </p>
       </div>
-      {/* <div className='swiper-container'>
-        <Swiper
-          spaceBetween={20}
-          slidesPerView={3}
-          navigation
-          pagination={{ clickable: true }}
-          className='swiper-wrapper'
-        >
-          {imageUrls.map((src, index) => (
-            <SwiperSlide key={index} className='swiper-slide'>
-              <img src={src} alt="Sertifika" className="swiper-image" />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div> */}
+     
     </div>
  
   );
