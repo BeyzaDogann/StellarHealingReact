@@ -1,0 +1,75 @@
+.container {
+  margin-top: 50px;
+}
+
+.who-card {
+  display: flex;
+  align-items: center;
+  
+  padding: 60px;
+  background-color: rgb(164, 202, 215);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 250px;
+
+}
+
+.who-card img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.who-card div {
+  margin-left: 50px;
+}
+
+.who-card span {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 36px;
+  color: rgb(109, 109, 166);
+  margin-bottom: 20px;
+}
+
+.who-card p {
+  font-size: 16px;
+  color: #333;
+}
+
+.swiper-ser {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.swiper-ser h2 {
+  color: rgb(0, 119, 255);
+  margin-bottom: 60px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ser-img {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ser-img img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}

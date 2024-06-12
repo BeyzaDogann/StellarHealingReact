@@ -1,0 +1,35 @@
+.photo-link {
+  text-decoration: none;
+  color: initial;
+  position: relative;
+}
+
+
+
+.photo-link .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.photo-link:hover .caption {
+  opacity: 1;
+}
+
+.photo-link img {
+  display: block;
+  width: 100%;
+}
+
+.photo-link p {
+  margin: 0;
+}
+
+
