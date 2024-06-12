@@ -47,7 +47,7 @@ function NavigationBar() {
           </NavDropdown>
           <Nav.Link as={Link} to="/Contact">İletişim</Nav.Link>
         </Nav>
-          <SearchForm />
+     
       </Navbar.Collapse>
     </Navbar>
   );
