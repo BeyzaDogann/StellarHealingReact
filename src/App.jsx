@@ -1,5 +1,5 @@
 import React from 'react';
-// import './App.css';
+import './style/App.css';
 import { Routes, Route} from "react-router-dom";
 import Anasayfa from './pages/Home';
 import Hakkımda from './pages/About';
@@ -9,7 +9,7 @@ import NeckHernia from  './pages/neck-hernia';
 import ImpSendrome from './pages/imp';
 import DeskWorker from './pages/desk-worker';
 import Footer from './components/Footer';
-
+import SingUp from './pages/SignUp'
 function App() {
 
   return (
@@ -25,6 +25,7 @@ function App() {
         <Route path="/neck-hernia" element={<NeckHernia/>} /> 
         <Route path="/imp" element={<ImpSendrome/>} /> 
         <Route path="/desk-worker" element={<DeskWorker/>} /> 
+        <Route path="/signup" element={<SingUp/>} /> 
         
       </Routes>
       <Footer/>
