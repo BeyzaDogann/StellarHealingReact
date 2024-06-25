@@ -4,11 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../assets/log-img/logo.jpg';
 import { Link } from 'react-router-dom';
 import { NavDropdown } from 'react-bootstrap';
-import { createClient } from '@supabase/supabase-js';
+import '../style/Navbar.css'
 
-const supabaseUrl = 'https://efhwsckmklwualgwhwrh.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVmaHdzY2tta2x3dWFsZ3dod3JoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTg4NzAyMTQsImV4cCI6MjAzNDQ0NjIxNH0.xCj4AoleFsJvkCPtjvpwupk5OLtMx-F8IuQMqsXRqs4';
-const supabase = createClient(supabaseUrl, supabaseKey);
+
 
 function NavigationBar() {
   const [searchResults, setSearchResults] = useState([]);
@@ -18,9 +16,9 @@ function NavigationBar() {
     const searchQuery = event.target.elements.search.value;
     console.log("Arama Sorgusu: ", searchQuery);
 
-    // Supabase ile arama yap
+   
     const { data, error } = await supabase
-      .from('items') // items tablonuzun adı
+      .from('items') 
       .select('*')
       .ilike('name', `%${searchQuery}%`);
 

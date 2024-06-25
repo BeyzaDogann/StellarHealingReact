@@ -9,7 +9,10 @@ import NeckHernia from  './pages/neck-hernia';
 import ImpSendrome from './pages/imp';
 import DeskWorker from './pages/desk-worker';
 import Footer from './components/Footer';
-import SingUp from './pages/SignUp'
+import SignUp from './components/SignUp';
+import ForgotPassword from './components/ForgotPassword';
+
+
 function App() {
 
   return (
@@ -25,7 +28,10 @@ function App() {
         <Route path="/neck-hernia" element={<NeckHernia/>} /> 
         <Route path="/imp" element={<ImpSendrome/>} /> 
         <Route path="/desk-worker" element={<DeskWorker/>} /> 
-        <Route path="/signup" element={<SingUp/>} /> 
+        <Route path="/signUp" element={<SignUp/>} /> 
+        <Route path="/forgotpassword" element={<ForgotPassword/>} /> 
+    
+
         
       </Routes>
       <Footer/>
