@@ -55,7 +55,6 @@ function SignUp() {
 
     if (user) {
       alert('Giriş başarılı!');
- 
     } else {
       alert('Email veya şifre hatalı.');
     }
@@ -75,7 +74,7 @@ function SignUp() {
             aria-controls="pills-login"
             aria-selected={activeTab === 'login' ? 'true' : 'false'}
           >
-            Giriş Yap
+            <span style={{ color: '#09203f' }}>Giriş Yap</span>
           </a>
         </li>
         <li className="nav-item" role="presentation">
@@ -89,7 +88,7 @@ function SignUp() {
             aria-controls="pills-register"
             aria-selected={activeTab === 'register' ? 'true' : 'false'}
           >
-            Kayıt Ol
+            <span style={{ color: '#09203f' }}>Kayıt Ol</span>
           </a>
         </li>
       </ul>
@@ -101,23 +100,45 @@ function SignUp() {
           role="tabpanel"
           aria-labelledby="tab-login"
         >
-          <form onSubmit={handleLoginSubmit}>
-            <div className="form-outline mb-4">
-              <input type="email" id="email" className="form-control" value={loginForm.email} onChange={handleLoginChange} />
-              <label className="form-label" htmlFor="email">
-                Email/Kullanıcı adı
-              </label>
-            </div>
-            <div className="form-outline mb-4">
-              <input type="password" id="password" className="form-control" value={loginForm.password} onChange={handleLoginChange} />
-              <label className="form-label" htmlFor="password">
-                Şifre
-              </label>
+          <form onSubmit={handleLoginSubmit} className="mb-3">
+            <div className="row mb-4">
+              <div className="col">
+                <div className="form-floating">
+                  <input
+                    type="email"
+                    id="email"
+                    className="form-control"
+                    value={loginForm.email}
+                    onChange={handleLoginChange}
+                    placeholder="Email/Kullanıcı adı"
+                  />
+                  <label htmlFor="email">Email/Kullanıcı adı</label>
+                </div>
+              </div>
+              <div className="col">
+                <div className="form-floating">
+                  <input
+                    type="password"
+                    id="password"
+                    className="form-control"
+                    value={loginForm.password}
+                    onChange={handleLoginChange}
+                    placeholder="Şifre"
+                  />
+                  <label htmlFor="password">Şifre</label>
+                </div>
+              </div>
             </div>
             <div className="row mb-4">
               <div className="col-md-6 d-flex justify-content-center">
                 <div className="form-check mb-3 mb-md-0">
-                  <input className="form-check-input" type="checkbox" value="" id="loginCheck" defaultChecked />
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="loginCheck"
+                    defaultChecked
+                  />
                   <label className="form-check-label" htmlFor="loginCheck">
                     Beni Hatırla
                   </label>
@@ -138,36 +159,77 @@ function SignUp() {
           role="tabpanel"
           aria-labelledby="tab-register"
         >
-          <form onSubmit={handleRegisterSubmit}>
-            <div className="form-outline mb-4">
-              <input type="text" id="name" className="form-control" value={registerForm.name} onChange={handleRegisterChange} />
-              <label className="form-label" htmlFor="name">
-                İsim-Soyisim
-              </label>
+          <form onSubmit={handleRegisterSubmit} className="mb-3">
+            <div className="row mb-4">
+              <div className="col">
+                <div className="form-floating">
+                  <input
+                    type="text"
+                    id="name"
+                    className="form-control"
+                    value={registerForm.name}
+                    onChange={handleRegisterChange}
+                    placeholder="İsim-Soyisim"
+                  />
+                  <label htmlFor="name">İsim-Soyisim</label>
+                </div>
+              </div>
+              <div className="col">
+                <div className="form-floating">
+                  <input
+                    type="text"
+                    id="username"
+                    className="form-control"
+                    value={registerForm.username}
+                    onChange={handleRegisterChange}
+                    placeholder="Kullanıcı Adı"
+                  />
+                  <label htmlFor="username">Kullanıcı Adı</label>
+                </div>
+              </div>
             </div>
-            <div className="form-outline mb-4">
-              <input type="text" id="username" className="form-control" value={registerForm.username} onChange={handleRegisterChange} />
-              <label className="form-label" htmlFor="username">
-                Kullanıcı Adı
-              </label>
+            <div className="row mb-4">
+              <div className="col">
+                <div className="form-floating">
+                  <input
+                    type="email"
+                    id="email"
+                    className="form-control"
+                    value={registerForm.email}
+                    onChange={handleRegisterChange}
+                    placeholder="Email"
+                  />
+                  <label htmlFor="email">Email</label>
+                </div>
+              </div>
+              <div className="col">
+                <div className="form-floating">
+                  <input
+                    type="password"
+                    id="password"
+                    className="form-control"
+                    value={registerForm.password}
+                    onChange={handleRegisterChange}
+                    placeholder="Şifre"
+                  />
+                  <label htmlFor="password">Şifre</label>
+                </div>
+              </div>
             </div>
-            <div className="form-outline mb-4">
-              <input type="email" id="email" className="form-control" value={registerForm.email} onChange={handleRegisterChange} />
-              <label className="form-label" htmlFor="email">
-                Email
-              </label>
-            </div>
-            <div className="form-outline mb-4">
-              <input type="password" id="password" className="form-control" value={registerForm.password} onChange={handleRegisterChange} />
-              <label className="form-label" htmlFor="password">
-                Şifre
-              </label>
-            </div>
-            <div className="form-outline mb-4">
-              <input type="password" id="repeatPassword" className="form-control" value={registerForm.repeatPassword} onChange={handleRegisterChange} />
-              <label className="form-label" htmlFor="repeatPassword">
-                Şifre Tekrar
-              </label>
+            <div className="row mb-4">
+              <div className="col">
+                <div className="form-floating">
+                  <input
+                    type="password"
+                    id="repeatPassword"
+                    className="form-control"
+                    value={registerForm.repeatPassword}
+                    onChange={handleRegisterChange}
+                    placeholder="Şifre Tekrar"
+                  />
+                  <label htmlFor="repeatPassword">Şifre Tekrar</label>
+                </div>
+              </div>
             </div>
             <button type="submit" className="btn btn-primary btn-block mb-3">
               Kayıt Ol

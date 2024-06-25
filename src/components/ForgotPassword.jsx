@@ -18,20 +18,20 @@ function ForgotPassword() {
   };
 
   return (
-    <div className="form-container d-flex justify-content-center">
-      <h2 col>Şifremi Unuttum</h2>
-      <form className='d-flex justify-content-center align-items-center' onSubmit={handleForgotPassword}>
-        <input
+    <div className="form-container d-flex justify-content-center mb-5 mt-5">
+      <h2 style={{color:'blue', fontSize:'20px', marginRight: '24px', marginTop: '18px'}}>Şifremi Unuttum:</h2>
+      <form className='justify-content-center align-items-center mt-3' onSubmit={handleForgotPassword}>
+        <input style={{borderRadius:'15px', padding: ' 6px 6px' }}
           type="email"
           placeholder="Email"
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <button className= 'd-flex justify-content-center align-items-center' type="submit">Şifreyi Gönder</button>
+        <button style={{marginTop: '16px'}} className= ' btn btn-primary d-flex justify-content-center align-items-center' type="submit">Şifreyi Gönder</button>
       </form>
       {message && <p>{message}</p>}
-      <button className= 'd-flex justify-content-center align-items-center' onClick={handleBack}>Geri Dön</button>
+      <button style={{marginTop: '75px'}} className= 'btn btn-primary  justify-content-center align-items-center mb-5' onClick={handleBack}>Geri Dön</button>
     </div>
   );
 }

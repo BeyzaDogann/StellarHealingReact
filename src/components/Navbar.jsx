@@ -57,7 +57,7 @@ function NavigationBar() {
             <Nav.Link as={Link} to="/Contact">İletişim</Nav.Link>
             <Nav.Link as={Link} to="/SignUp">Kayıt Ol</Nav.Link>
           </Nav>
-          <Form className="d-flex ms-auto" onSubmit={handleSubmit}>
+          <Form className=  "d-flex ms-auto" onSubmit={handleSubmit}>
             <FormControl
               type="search"
               placeholder="Arama..."
